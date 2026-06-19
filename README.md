@@ -2,6 +2,10 @@
 
 Unofficial Blender bridge for RizomUV round-trip workflows.
 
+[Download Latest Release](https://github.com/Seraphim04174/rizom-bridge-for-blender/releases/latest)
+|
+[Development Builds](https://github.com/Seraphim04174/rizom-bridge-for-blender/actions)
+
 Send meshes from Blender to RizomUV, work there, and bring the UVs back into Blender without manually exporting and reimporting files every time.
 
 This addon is built for practical round-trip work, especially for hard-surface scenes with many separate parts such as robots, weapons, mechanical kits, and repeated pieces like pistons or bolts.
@@ -95,6 +99,17 @@ The easiest way to install the addon is through the project's GitHub `Releases` 
 5. Enable `Rizom Bridge`.
 
 This packaged zip is built specifically for Blender addon installation.
+
+### Development builds
+
+If you want the newest automatic build without waiting for an official release:
+
+1. Open the project's `Actions` page.
+2. Open the latest successful workflow run on `main`.
+3. Download the generated artifact zip.
+4. Install it in Blender through `Edit > Preferences > Add-ons > Install...`
+
+This is useful for testers and contributors, but regular users should usually prefer the latest stable release.
 
 ### Standard install
 
