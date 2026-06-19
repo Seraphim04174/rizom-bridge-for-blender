@@ -100,6 +100,28 @@ The easiest way to install the addon is through the project's GitHub `Releases` 
 
 This packaged zip is built specifically for Blender addon installation.
 
+### Automatic releases for maintainers
+
+Official releases can be created automatically from Git tags.
+
+1. Update the addon version in `__init__.py`.
+2. Commit and push your changes.
+3. Create a version tag such as `v0.1.0`.
+4. Push the tag to GitHub.
+
+Example:
+
+```powershell
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+When the tag is pushed, GitHub Actions will:
+
+- build the installable Blender addon zip
+- create a GitHub Release for that tag
+- attach the zip file to the release automatically
+
 ### Development builds
 
 If you want the newest automatic build without waiting for an official release:
