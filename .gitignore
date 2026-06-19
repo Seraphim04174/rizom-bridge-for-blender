@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+
+rizomuv_bridge.log
+rizomuv_helper.log
+rizomuv_bridge_state.json
+
+*.zip
+
+.DS_Store
+Thumbs.db
