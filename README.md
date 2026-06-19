@@ -84,6 +84,18 @@ That architecture is the main reason this addon can stay practical even when Ble
 
 ## Installation
 
+### One-click install for users
+
+The easiest way to install the addon is through the project's GitHub `Releases` page:
+
+1. Open the latest release.
+2. Download the packaged addon zip, for example `rizom_bridge_for_blender-0.1.0.zip`.
+3. In Blender open `Edit > Preferences > Add-ons > Install...`
+4. Select the downloaded zip.
+5. Enable `Rizom Bridge`.
+
+This packaged zip is built specifically for Blender addon installation.
+
 ### Standard install
 
 1. Download or clone this repository.
@@ -95,6 +107,16 @@ That architecture is the main reason this addon can stay practical even when Ble
 ### Development install
 
 For live iteration during development, link the project folder into Blender's user addons directory and use `Reload Scripts` inside Blender after edits.
+
+### Building the install zip manually
+
+If you want to build the release archive yourself:
+
+```powershell
+python tools/package_addon.py
+```
+
+The generated installable addon zip will appear in the `dist/` folder.
 
 ## What Gets Transferred
 

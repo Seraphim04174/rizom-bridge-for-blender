@@ -6,6 +6,7 @@ rizomuv_helper.log
 rizomuv_bridge_state.json
 
 *.zip
+dist/
 
 .DS_Store
 Thumbs.db
